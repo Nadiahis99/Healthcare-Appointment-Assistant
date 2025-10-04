@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Appointment Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">HealthAI</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#booking">Book Now</a></li>
+      <li><a href="#assistant">AI Assistant</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="darkModeToggle" class="dark-toggle"><i class="bi bi-moon"></i></button>
+      <a href="#booking" class="btn">Get Appointment</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Smart Healthcare Appointment Assistant</h1>
+      <p>Find the right doctor, at the right time, powered by AI and ML.NET</p>
+      <a href="#booking" class="btn btn-primary">Book Appointment</a>
+    </div>
+    <div class="hero-image">
+      <img src="doctor.png" alt="Healthcare AI">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <h2>Why HealthAI?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>AI-Powered Recommendations</h3>
+        <p>Personalized doctor and time suggestions using your medical history & symptoms.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Seamless Booking</h3>
+        <p>Book your appointment in seconds with a modern and intuitive interface.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Doctor Dashboard</h3>
+        <p>Smart insights for doctors with secure patient data integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking">
+    <h2>Book an Appointment</h2>
+    <form class="booking-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Symptoms (e.g. headache, fever)" required>
+      <select>
+        <option>Select Specialization</option>
+        <option>General Physician</option>
+        <option>Cardiologist</option>
+        <option>Dermatologist</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Find Doctor</button>
+    </form>
+  </section>
+
+  <!-- AI Assistant -->
+  <section id="assistant" class="assistant">
+    <h2>Your AI Healthcare Assistant</h2>
+    <div class="chatbox">
+      <div class="message bot">Hello 👋 I'm your healthcare assistant. How can I help you today?</div>
+      <div class="message user">I have a headache and slight fever.</div>
+      <div class="message bot">Based on your symptoms, I recommend a General Physician. Would you like to book an appointment?</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nadia Hisham </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
